@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owner Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F5EFE7;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Header */
+        header {
+            background-color: #213555;
+            color: #D8C4B6;
+            text-align: center;
+            padding: 20px;
+            font-size: 2em;
+        }
+
+        /* Navbar */
+        nav {
+            background-color: #3E5879;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #D8C4B6;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        nav ul li a:hover {
+            color: #fff;
+        }
+
+        /* Main Content */
+        .container {
+            padding: 30px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            color: #213555;
+        }
+
+        p {
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        /* Apartment Listings Section */
+        .apartment-listings {
+            margin-top: 40px;
+        }
+
+        .apartments {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .apartment {
+            background-color: #fff;
+            border-radius: 8px;
+            width: 250px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .apartment:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .apartment img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .apartment h4 {
+            font-size: 1.4em;
+            margin-top: 15px;
+        }
+
+        .apartment p {
+            font-size: 1.1em;
+        }
+
+        .apartment a {
+            text-decoration: none;
+            color: #3E5879;
+            font-weight: bold;
+            margin-top: 10px;
+            display: inline-block;
+            margin-right: 15px;
+        }
+
+        .apartment a:hover {
+            color: #213555;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>Owner Dashboard</header>
+
+    <!-- Navbar Section -->
+    <nav>
+        <ul>
+            <li><a href="index.htm">Home</a></li>
+            <li><a href="logout.html">Logout</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Section -->
+    <div class="container">
+        <h2>Welcome, Property Owner!</h2>
+        <p>Manage your listings and find the right tenants.</p>
+
+        <!-- Apartment Listings Section -->
+        <section class="apartment-listings">
+            <h3>Your Apartments</h3>
+            <div class="apartments">
+                <div class="apartment">
+                    <img src="1.jpg" alt="Apartment 1">
+                    <h4>Apartment 1</h4>
+                    <p>Location: Cairo</p>
+                    <p>Status: Available</p>
+                    <a href="edit-apartment.html?id=1">Edit</a> | 
+                    <a href="delete-apartment.html?id=1">Delete</a>
+                </div>
+
+                <div class="apartment">
+                    <img src="2.jpeg" alt="Apartment 2">
+                    <h4>Apartment 2</h4>
+                    <p>Location: Alexandria</p>
+                    <p>Status: Occupied</p>
+                    <a href="edit-apartment.html?id=2">Edit</a> | 
+                    <a href="delete-apartment.html?id=2">Delete</a>
+                </div>
+
+                <div class="apartment">
+                    <img src="3.jpeg" alt="Apartment 3">
+                    <h4>Apartment 3</h4>
+                    <p>Location: Alexandria</p>
+                    <p>Status: Occupied</p>
+                    <a href="edit-apartment.html?id=3">Edit</a> | 
+                    <a href="delete-apartment.html?id=3">Delete</a>
+                </div>
+
+                <div class="apartment">
+                    <img src="4.jpeg" alt="Apartment 4">
+                    <h4>Apartment 4</h4>
+                    <p>Location: Cairo</p>
+                    <p>Status: Occupied</p>
+                    <a href="edit-apartment.html?id=4">Edit</a> | 
+                    <a href="delete-apartment.html?id=4">Delete</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>

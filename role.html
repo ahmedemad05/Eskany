@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Role</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F5EFE7;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        /* Header */
+        header {
+            background-color: #213555;
+            color: #D8C4B6;
+            /* text-align: center; */
+            padding: 20px;
+            width: 100%;
+            font-size: 2em;
+            margin-bottom: 30px;
+        }
+
+        /* Container for Content */
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            color: #213555;
+        }
+
+        /* Role Selection */
+        .role-selection {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .role-btn {
+            background-color: #3E5879;
+            color: #fff;
+            padding: 15px 25px;
+            text-decoration: none;
+            font-size: 1.2em;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .role-btn:hover {
+            background-color: #213555;
+        }
+    </style>
+</head>
+<body>
+    <header>Select Your Role</header>
+    <div class="container">
+        <h2>Choose Your Role</h2>
+        <div class="role-selection">
+            <a href="student_dashboard.html" class="role-btn">Student</a>
+            <a href="owner_dashboard.html" class="role-btn">Property Owner</a>
+        </div>
+    </div>
+</body>
+</html>

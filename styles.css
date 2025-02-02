@@ -1,0 +1,167 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F5EFE7;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header and Navbar */
+header {
+    background-color: #213555;
+    color: #D8C4B6;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+header h1 {
+    margin-bottom: 30px;
+    font-size: 2.5em;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; /* Distribute items with space between */
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #D8C4B6;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #3E5879;
+}
+
+nav div {
+    display: flex;
+    gap: 15px;
+}
+
+nav div li a {
+    color: #D8C4B6;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav div li a:hover {
+    color: #3E5879;
+}
+
+/* Main Content */
+main {
+    flex-grow: 1;
+    padding: 40px 20px;
+}
+
+.intro-section {
+    background-color: #F5EFE7;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.intro-section p {
+    font-size: 1.3em;
+    color: #333;
+}
+
+#search-results {
+    margin-top: 40px;
+}
+
+#search-results h3 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.apartment-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.apartment {
+    background-color: #fff;
+    border-radius: 8px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.apartment:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.apartment img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.apartment h3 {
+    font-size: 1.3em;
+    margin-top: 15px;
+}
+
+.apartment p {
+    font-size: 1.1em;
+}
+
+/* Footer */
+footer {
+    background-color: #213555;
+    color: #D8C4B6;
+    text-align: center;
+    padding: 30px;
+    width: 100%;
+    margin-top: 40px;
+}
+
+footer .contact-info {
+    margin-top: 20px;
+}
+
+footer .contact-info p {
+    font-size: 1.1em;
+}
+
+footer .contact-info a {
+    color: #D8C4B6;
+    text-decoration: none;
+    margin: 5px;
+    transition: color 0.3s;
+}
+
+footer .contact-info a:hover {
+    color: #3E5879;
+}
